@@ -1,4 +1,4 @@
-package layout;
+package com.georgestudenko.tourguide;
 
 
 import android.os.Bundle;
