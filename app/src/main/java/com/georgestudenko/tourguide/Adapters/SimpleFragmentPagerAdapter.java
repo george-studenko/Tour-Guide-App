@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
  */
 
 public class SimpleFragmentPagerAdapter extends FragmentStatePagerAdapter{
+private int mTotalTabs = 3;
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -20,7 +21,7 @@ public class SimpleFragmentPagerAdapter extends FragmentStatePagerAdapter{
 
     @Override
     public int getCount() {
-        return 0;
+        return mTotalTabs;
     }
 
     @Override
