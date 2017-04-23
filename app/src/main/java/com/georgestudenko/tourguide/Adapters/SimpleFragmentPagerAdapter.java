@@ -35,21 +35,33 @@ private Context mContext;
         ArrayList<Place> placesData = new ArrayList<>();
 
         if(position==0) {
-            placesData.add(new Place("Arc de Triomf", "The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks.", "Passeig de Lluís Companys, 17 08018 Barcelona", R.drawable.arc_de_triomf, Uri.parse("google.navigation:q=Arco+del+Triunfo+de+Barcelona")));
-            placesData.add(new Place("Sagrada Familia", "The Basílica i Temple Expiatori de la Sagrada Família is a large Roman Catholic church in Barcelona, designed by Catalan architect Antoni Gaudí. The building is part of a UNESCO World Heritage Site, Construction of Sagrada Família commenced in 1882.", "Plaça de Gaudí, 253, 08013 Barcelona", R.drawable.sagrada_familia, Uri.parse("google.navigation:q=La+Sagrada+Familia+Barcelona")));
-            placesData.add(new Place("Plaza España", "One of Barcelona's most important squares, built on the occasion of the 1929 International Exhibition, held at the foot of Montjuïc. It is the junction of several major thoroughfares: Gran Via, Avinguda del Paral·lel, Creu Coberta and Carrer de Tarragona", "Plaça d'Espanya, 08004 Barcelona", R.drawable.plaza_espana, Uri.parse("google.navigation:q=Plaça+d'Espanya,+08004+Barcelona")));
-            placesData.add(new Place("Torre Agbar", "A 38-story skyscraper located between Avinguda Diagonal and Carrer Badajoz,which marks the gateway to the new technological district of Barcelona. Named after its owners, the Agbar Group, a holding company whose interests include the Barcelona water company Aigües de Barcelona.", "Torre Agbar 08018 Barcelona", R.drawable.torre_agbar, Uri.parse("google.navigation:q=Agbar+Tower+Barcelona")));
-            placesData.add(new Place("Arc de Triomf", "The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks.", "Passeig de Lluís Companys, 17 08018 Barcelona", R.drawable.arc_de_triomf, Uri.parse("google.navigation:q=Arco+del+Triunfo+de+Barcelona")));
+            // Sightseeing
+            placesData.add(new Place(mContext.getString(R.string.arc_triomf), mContext.getString(R.string.arc_triomf_description), mContext.getString(R.string.arc_triomf_address), R.drawable.arc_de_triomf, Uri.parse(mContext.getString(R.string.arc_triomf_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.sagrada_familia_title), mContext.getString(R.string.sagrada_familia_desc), mContext.getString(R.string.sagrada_familia_address), R.drawable.sagrada_familia, Uri.parse(mContext.getString(R.string.sagrada_familia_uri))));
+            placesData.add(new Place(mContext.getString(R.string.plaza_espana_title), mContext.getString(R.string.plaza_espana_desc), mContext.getString(R.string.plaza_espana_address), R.drawable.plaza_espana, Uri.parse(mContext.getString(R.string.plaza_espana_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.torre_agbar_title), mContext.getString(R.string.torre_agbar_desc), mContext.getString(R.string.torre_agbar_address), R.drawable.torre_agbar, Uri.parse(mContext.getString(R.string.torre_agbar_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.magic_fountain_title), mContext.getString(R.string.magic_fountain_desc), mContext.getString(R.string.magic_fountain_address), R.drawable.fuente_magica, Uri.parse(mContext.getString(R.string.magic_fountain_google_uri))));
         }
         else if(position==1) {
-            placesData.add(new Place("Plaza España", "One of Barcelona's most important squares, built on the occasion of the 1929 International Exhibition, held at the foot of Montjuïc. It is the junction of several major thoroughfares: Gran Via, Avinguda del Paral·lel, Creu Coberta and Carrer de Tarragona", "Plaça d'Espanya, 08004 Barcelona", R.drawable.plaza_espana, Uri.parse("google.navigation:q=Plaça+d'Espanya,+08004+Barcelona")));
-            placesData.add(new Place("Torre Agbar", "A 38-story skyscraper located between Avinguda Diagonal and Carrer Badajoz,which marks the gateway to the new technological district of Barcelona. Named after its owners, the Agbar Group, a holding company whose interests include the Barcelona water company Aigües de Barcelona.", "Torre Agbar 08018 Barcelona", R.drawable.torre_agbar, Uri.parse("google.navigation:q=Agbar+Tower+Barcelona")));
-            placesData.add(new Place("Arc de Triomf", "The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks.", "Passeig de Lluís Companys, 17 08018 Barcelona", R.drawable.arc_de_triomf, Uri.parse("google.navigation:q=Arco+del+Triunfo+de+Barcelona")));
+            // Parks
+            placesData.add(new Place(mContext.getString(R.string.parc_guell_title), mContext.getString(R.string.parc_guell_desc), mContext.getString(R.string.parc_guell_address), R.drawable.parc_guell, Uri.parse(mContext.getString(R.string.parc_guell_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.park_ciudatella_title), mContext.getString(R.string.park_ciudatella_desc), mContext.getString(R.string.park_ciudatella_address), R.drawable.parc_ciutadella, Uri.parse(mContext.getString(R.string.park_ciudatella_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.tibidabo_title), mContext.getString(R.string.tibidabo_desc), mContext.getString(R.string.tibidabo_address), R.drawable.tibidabo, Uri.parse(mContext.getString(R.string.tibidabo_google_uri))));
         }
 
         else if(position==2) {
-            placesData.add(new Place("Torre Agbar", "A 38-story skyscraper located between Avinguda Diagonal and Carrer Badajoz,which marks the gateway to the new technological district of Barcelona. Named after its owners, the Agbar Group, a holding company whose interests include the Barcelona water company Aigües de Barcelona.", "Torre Agbar 08018 Barcelona", R.drawable.torre_agbar, Uri.parse("google.navigation:q=Agbar+Tower+Barcelona")));
-            placesData.add(new Place("Plaza España", "One of Barcelona's most important squares, built on the occasion of the 1929 International Exhibition, held at the foot of Montjuïc. It is the junction of several major thoroughfares: Gran Via, Avinguda del Paral·lel, Creu Coberta and Carrer de Tarragona", "Plaça d'Espanya, 08004 Barcelona", R.drawable.plaza_espana, Uri.parse("google.navigation:q=Plaça+d'Espanya,+08004+Barcelona")));
+            // Activities
+            placesData.add(new Place(mContext.getString(R.string.arenas_title), mContext.getString(R.string.arenas_desc), mContext.getString(R.string.arenas_address), R.drawable.arenas_de_barcelona, Uri.parse(mContext.getString(R.string.arenas_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.barceloneta_title), mContext.getString(R.string.barceloneta_desc), mContext.getString(R.string.barceloneta_address), R.drawable.barceloneta, Uri.parse(mContext.getString(R.string.barceloneta_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.boqueria_title), mContext.getString(R.string.boqueria_desc), mContext.getString(R.string.boqueria_address), R.drawable.boqueria, Uri.parse(mContext.getString(R.string.boqueria_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.camp_nou_title), mContext.getString(R.string.camp_nou_desc), mContext.getString(R.string.camp_nou_address), R.drawable.camp_nou, Uri.parse(mContext.getString(R.string.camp_nou_google_uri))));
+
+        }
+
+        else if(position==3) {
+            // Museums
+            placesData.add(new Place(mContext.getString(R.string.mnac_title), mContext.getString(R.string.mnac_desc), mContext.getString(R.string.mnac_address), R.drawable.mnac, Uri.parse(mContext.getString(R.string.mnac_google_uri))));
+            placesData.add(new Place(mContext.getString(R.string.museum_maritim_title), mContext.getString(R.string.museum_maritim_descr), mContext.getString(R.string.museum_maritim_address), R.drawable.museo_maritim, Uri.parse(mContext.getString(R.string.museum_maritim_google_uri))));
         }
 
         Bundle bundle = new Bundle();
@@ -67,11 +79,13 @@ private Context mContext;
     public CharSequence getPageTitle(int position) {
         switch (position){
             case 0:
-                return "Sightseeing";
+                return mContext.getString(R.string.sightseeing_title);
             case 1:
-                return "Parks";
+                return mContext.getString(R.string.parks_title);
             case 2:
-                return "Activities";
+                return mContext.getString(R.string.activities_title);
+            case 3:
+                return mContext.getString(R.string.museums_title);
             default:
                 return super.getPageTitle(position);
         }

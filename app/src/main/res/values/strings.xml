@@ -3,4 +3,65 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sightseeing_title">Sightseeing</string>
+    <string name="parks_title">Parks</string>
+    <string name="activities_title">Activities</string>
+    <string name="museums_title">Museums</string>
+    <string name="arc_triomf">Arc de Triomf</string>
+    <string name="arc_triomf_description">The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city\'s iconic landmarks.</string>
+    <string name="arc_triomf_address">Passeig de Lluís Companys, 17 08018 Barcelona</string>
+    <string name="arc_triomf_google_uri">google.navigation:q=Arco+del+Triunfo+de+Barcelona</string>
+    <string name="address">Address:</string>
+    <string name="sagrada_familia_title">Sagrada Familia</string>
+    <string name="sagrada_familia_desc">The Basílica i Temple Expiatori de la Sagrada Família is a large Roman Catholic church in Barcelona, designed by Catalan architect Antoni Gaudí. The building is part of a UNESCO World Heritage Site, Construction of Sagrada Família commenced in 1882.</string>
+    <string name="sagrada_familia_address">Plaça de Gaudí, 253, 08013 Barcelona</string>
+    <string name="sagrada_familia_uri">google.navigation:q=La+Sagrada+Familia+Barcelona</string>
+    <string name="plaza_espana_title">Plaza España</string>
+    <string name="plaza_espana_desc">One of Barcelona\'s most important squares, built on the occasion of the 1929 International Exhibition, held at the foot of Montjuïc. It is the junction of several major thoroughfares: Gran Via, Avinguda del Paral·lel, Creu Coberta and Carrer de Tarragona</string>
+    <string name="plaza_espana_address">Plaça d\'Espanya, 08004 Barcelona</string>
+    <string name="plaza_espana_google_uri">google.navigation:q=Plaça+d\'Espanya,+08004+Barcelona</string>
+    <string name="torre_agbar_title">Torre Agbar</string>
+    <string name="torre_agbar_desc">A 38-story skyscraper located between Avinguda Diagonal and Carrer Badajoz,which marks the gateway to the new technological district of Barcelona. Named after its owners, the Agbar Group, a holding company whose interests include the Barcelona water company Aigües de Barcelona.</string>
+    <string name="torre_agbar_address">Torre Agbar 08018 Barcelona</string>
+    <string name="torre_agbar_google_uri">google.navigation:q=Agbar+Tower+Barcelona</string>
+    <string name="magic_fountain_title">Magic Fountain</string>
+    <string name="magic_fountain_desc">Is situated below the Palau Nacional on the Montjuïc mountain and near the Plaça d\'Espanya and Poble Espanyol de Barcelona. Performances include film, classical, and modern music. Performances take place at half-hour intervals every weekend.</string>
+    <string name="magic_fountain_address">Avinguda de la Reina Maria Cristina, 08004 Barcelona</string>
+    <string name="magic_fountain_google_uri">google.navigation:q=Font+Màgica+de+Montjuïc</string>
+    <string name="parc_guell_title">Parc Guell</string>
+    <string name="parc_guell_desc">A public park system composed of gardens and architectonic elements located on Carmel Hill. he park was built between 1900 and 1914 and was officially opened as a public park in 1926. In 1984, UNESCO declared the park a World Heritage Site under Works of Antoni Gaudí. Park Güell is the reflection of Gaudí’s artistic plenitude, which belongs to his naturalist phase</string>
+    <string name="parc_guell_address">Carrer d\'Olot, 10, 08024 Barcelona</string>
+    <string name="parc_guell_google_uri">google.navigation:q=Park+Güell+Barcelona</string>
+    <string name="park_ciudatella_title">Parc de la Ciudatella</string>
+    <string name="park_ciudatella_desc">For decades following its creation in the mid-19th century, this park was the city\'s only green space. The 280,000 m2 grounds include the city zoo, the Parliament of Catalonia, a small lake, museums, and a large fountain designed by Josep Fontserè (with possible contributions by the young Antoni Gaudí).</string>
+    <string name="park_ciudatella_address">Passeig de Pujades, 8, 08003 Barcelona</string>
+    <string name="park_ciudatella_google_uri">google.navigation:q=Ciutadella+Park+Barcelona</string>
+    <string name="tibidabo_title">Tibidabo Amusement Park</string>
+    <string name="tibidabo_desc">The park was built in 1899 by Salvador Andreu and opened in 1905. The park is among the oldest in the world still functioning. It is Spain\'s longest running amusement park and Europe\'s third-oldest. Most of the original rides, some of which date to the turn of the 20th century, are still in use.</string>
+    <string name="tibidabo_address">Camí del Cel del Tibidabo 08035 Barcelona</string>
+    <string name="tibidabo_google_uri">google.navigation:q=Parque+de+Atracciones+Tibidabo+Barcelona</string>
+    <string name="arenas_title">Arenas de Barcelona</string>
+    <string name="arenas_desc">A shopping center, leisure and cultural center opened in 2011 and located in the remodeling of the old bullring Las Arenas in the Plaza of Spain in Barcelona building. The original building, inaugurated in 1900, was a bullring that in 1977 stopped practicing bullfighting.</string>
+    <string name="arenas_address">Torre Agbar 08018 Barcelona</string>
+    <string name="arenas_google_uri">google.navigation:q=Agbar+Tower+Barcelona</string>
+    <string name="barceloneta_title">Barceloneta</string>
+    <string name="barceloneta_desc">La Barceloneta is known for its sandy beach (which made an appearance in Don Quixote, book 2) and its many restaurants and nightclubs along the boardwalk. With its modernity, La Barceloneta continues to inhabit the scent of salt and marine life. For many, this is considered a luxury.</string>
+    <string name="barceloneta_address">Pg Marítim-Almirall Cervera, Barcelona 08003</string>
+    <string name="barceloneta_google_uri">google.navigation:q=Pg+Marítim-Almirall+Cervera+Barcelona</string>
+    <string name="boqueria_title">La Boqueria</string>
+    <string name="boqueria_desc">A large public market in the Ciutat Vella district of Barcelona, Catalonia, Spain, and one of the city\'s foremost tourist landmarks, with an entrance from La Rambla, not far from the Liceu, Barcelona\'s opera house. The market has a very diverse selection of goods.</string>
+    <string name="boqueria_address">La Rambla, 89, 08002 Barcelona</string>
+    <string name="boqueria_google_uri">google.navigation:q=Mercado+de+La+Boqueria+Barcelona</string>
+    <string name="camp_nou_title">Camp Nou</string>
+    <string name="camp_nou_desc">Football stadium in Barcelona. It has been the home of FC Barcelona since its completion in 1957. With a seating capacity of 99,354, it is the largest stadium in Spain, also the largest in Europe and the third largest association football stadium in the world in terms of capacity.</string>
+    <string name="camp_nou_address">Carrer d\'Aristides Maillol, 12, 08028 Barcelona</string>
+    <string name="camp_nou_google_uri">google.navigation:q=Camp+Nou,+Carrer+d\'Aristides+Maillol,+12,+08028+Barcelona</string>
+    <string name="mnac_title">MNAC</string>
+    <string name="mnac_desc">\"National Art Museum of Catalonia\"), is the national museum of Catalan visual art located in Barcelona. The museum is especially notable for its outstanding collection of romanesque church paintings, and for Catalan art and design from the late 19th and early 20th centuries, including modernisme and noucentisme.</string>
+    <string name="mnac_address">Carrer del Mirador del Palau Nacional, 6, 08038 Barcelona</string>
+    <string name="mnac_google_uri">google.navigation:q=Carrer+del+Mirador+del+Palau+Nacional,+6,+08038+Barcelona</string>
+    <string name="museum_maritim_title">Maritime Museum of Barcelona</string>
+    <string name="museum_maritim_descr">The Maritime Museum of Barcelona (MMB) is located in the building of Drassanes Reials de Barcelona, the royal arsenal of Barcelona, dedicated to shipbuilding between the thirteenth century and eighteenth century. The first mention of these arsenals date from 1243 in a document indicating the boundaries of the city of Barcelona where it mentions its shipyard.</string>
+    <string name="museum_maritim_address">Passeig de Josep Carner, 26 08001 Barcelona</string>
+    <string name="museum_maritim_google_uri">google.navigation:q=Passeig+de+Josep+Carner,+26,+08001+Barcelona</string>
 </resources>
