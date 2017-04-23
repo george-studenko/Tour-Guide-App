@@ -36,15 +36,23 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         if(v==null){
             v = LayoutInflater.from(mContext).inflate(R.layout.place_item,parent,false);
         }
-        Place place = mPlaces.get(position);
+        final Place place = mPlaces.get(position);
 
         ImageView placeImage = (ImageView) v.findViewById(R.id.placeImage);
+        ImageView pinImage = (ImageView) v.findViewById(R.id.pinIcon);
         TextView placeName = (TextView) v.findViewById(R.id.placeName);
         TextView placeShortDescription = (TextView) v.findViewById(R.id.placeShortDescription);
 
         placeImage.setImageResource(place.getPictureResource());
         placeName.setText(place.getName());
         placeShortDescription.setText(place.getDescription());
+        pinImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW,place.getGoogleMapsAddress());
+                v.getContext().startActivity(intent);
+            }
+        });
 
         return v;
     }
