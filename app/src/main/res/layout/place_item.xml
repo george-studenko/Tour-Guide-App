@@ -54,7 +54,7 @@
                     android:layout_alignParentTop="true"
                     android:alpha="0.4"
                     android:gravity="right"
-                    android:src="@drawable/ic_place_black_24dp" />
+                    android:src="@drawable/ic_navigation_black_24dp" />
             </RelativeLayout>
 
             <TextView
