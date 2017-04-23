@@ -1,73 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingRight="15dp"
-    android:layout_marginBottom="10dp">
+    style="@style/placeMainLayout">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/placeItem">
 
         <ImageView
             android:id="@+id/placeImage"
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            android:minHeight="120dp"
+            android:src="@drawable/arc_de_triomf"
+            style="@style/placeImage" />
 
-            android:scaleType="centerCrop"
-            android:src="@drawable/arc_de_triomf" />
+        <LinearLayout style="@style/placeContentLayout">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="5dp"
-            android:paddingLeft="15dp"
-            android:paddingTop="5dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <RelativeLayout style="@style/titleLayout">
 
                 <TextView
                     android:id="@+id/placeName"
-                    android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:gravity="left"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                    android:textColor="@color/colorAccent"
-                    tools:text="Arc de Triomf" />
+                    tools:text="Arc de Triomf"
+                    style="@style/paceName" />
 
                 <ImageView
                     android:id="@+id/pinIcon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:alpha="0.4"
-                    android:gravity="right"
-                    android:src="@drawable/ic_navigation_black_24dp" />
+                    android:src="@drawable/ic_navigation_black_24dp"
+                    style="@style/pinIcon" />
             </RelativeLayout>
 
             <TextView
                 android:id="@+id/placeShortDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks." />
+                tools:text="The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks."
+                style="@style/placeDescription" />
             <TextView
                 android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                tools:text="Address: Plaza España, 08018 Barcelona" />
+                tools:text="Address: Plaza España, 08018 Barcelona"
+                style="@style/placeAddress" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
