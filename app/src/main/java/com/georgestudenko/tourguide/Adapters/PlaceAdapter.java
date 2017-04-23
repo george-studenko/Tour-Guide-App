@@ -1,6 +1,7 @@
 package com.georgestudenko.tourguide.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -41,11 +42,14 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         ImageView placeImage = (ImageView) v.findViewById(R.id.placeImage);
         ImageView pinImage = (ImageView) v.findViewById(R.id.pinIcon);
         TextView placeName = (TextView) v.findViewById(R.id.placeName);
+        TextView address = (TextView) v.findViewById(R.id.address);
         TextView placeShortDescription = (TextView) v.findViewById(R.id.placeShortDescription);
 
         placeImage.setImageResource(place.getPictureResource());
         placeName.setText(place.getName());
         placeShortDescription.setText(place.getDescription());
+        address.setText(mContext.getString(R.string.address)+place.getAddress());
+
         pinImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
