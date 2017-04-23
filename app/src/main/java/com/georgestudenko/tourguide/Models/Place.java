@@ -1,12 +1,14 @@
 package com.georgestudenko.tourguide.Models;
 
 import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 /**
  * Created by george on 22/04/2017.
  */
 
-public class Place {
+public class Place implements Parcelable{
     private String mName;
     private String mDescription;
     private String mAddress;
@@ -60,4 +62,38 @@ public class Place {
     public void setGoogleMapsAddress(Uri mGoogleMapsAddress) {
         this.mGoogleMapsAddress = mGoogleMapsAddress;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.mName);
+        dest.writeString(this.mDescription);
+        dest.writeString(this.mAddress);
+        dest.writeInt(this.mPictureResource);
+        dest.writeParcelable(this.mGoogleMapsAddress, flags);
+    }
+
+    protected Place(Parcel in) {
+        this.mName = in.readString();
+        this.mDescription = in.readString();
+        this.mAddress = in.readString();
+        this.mPictureResource = in.readInt();
+        this.mGoogleMapsAddress = in.readParcelable(Uri.class.getClassLoader());
+    }
+
+    public static final Creator<Place> CREATOR = new Creator<Place>() {
+        @Override
+        public Place createFromParcel(Parcel source) {
+            return new Place(source);
+        }
+
+        @Override
+        public Place[] newArray(int size) {
+            return new Place[size];
+        }
+    };
 }
