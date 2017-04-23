@@ -26,6 +26,15 @@ private int mTotalTabs = 3;
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return super.getPageTitle(position);
+        switch (position){
+            case 0:
+                return "Sightseeing";
+            case 1:
+                return "Parks";
+            case 2:
+                return "Activities";
+            default:
+                return super.getPageTitle(position);
+        }
     }
 }
