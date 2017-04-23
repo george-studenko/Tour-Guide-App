@@ -64,5 +64,5 @@
     <string name="museum_maritim_descr">The Maritime Museum of Barcelona (MMB) is located in the building of Drassanes Reials de Barcelona, the royal arsenal of Barcelona, dedicated to shipbuilding between the thirteenth century and eighteenth century. The first mention of these arsenals date from 1243 in a document indicating the boundaries of the city of Barcelona where it mentions its shipyard.</string>
     <string name="museum_maritim_address">Passeig de Josep Carner, 26 08001 Barcelona</string>
     <string name="museum_maritim_google_uri">google.navigation:q=Passeig+de+Josep+Carner,+26,+08001+Barcelona</string>
-    <string name="no_intent_error">The action cannot be handled by any activity on your device</string>
+    <string name="no_intent_error">The action cannot be handled by any app on your device</string>
 </resources>
