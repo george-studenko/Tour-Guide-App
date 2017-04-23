@@ -1,14 +1,12 @@
 package com.georgestudenko.tourguide.Adapters;
 
+
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.view.View;
-import android.widget.ListView;
-
 import com.georgestudenko.tourguide.Models.Place;
 import com.georgestudenko.tourguide.PlacesListFragment;
 import com.georgestudenko.tourguide.R;
@@ -21,10 +19,12 @@ import java.util.ArrayList;
  */
 
 public class SimpleFragmentPagerAdapter extends FragmentStatePagerAdapter{
-private int mTotalTabs = 3;
+private int mTotalTabs = 4;
+private Context mContext;
 
-    public SimpleFragmentPagerAdapter(FragmentManager fm) {
+    public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
+        mContext=context;
 
     }
 

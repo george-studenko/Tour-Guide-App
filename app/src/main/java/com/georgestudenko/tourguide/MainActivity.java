@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(),this);
         viewPager.setAdapter(adapter);
         TabLayout tabs = (TabLayout) findViewById(R.id.sliding_tabs);
         tabs.setupWithViewPager(viewPager);
