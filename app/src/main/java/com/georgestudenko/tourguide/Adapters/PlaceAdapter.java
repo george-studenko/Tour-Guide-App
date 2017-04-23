@@ -2,14 +2,17 @@ package com.georgestudenko.tourguide.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.georgestudenko.tourguide.Models.Place;
 import com.georgestudenko.tourguide.R;
@@ -54,7 +57,12 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW,place.getGoogleMapsAddress());
-                v.getContext().startActivity(intent);
+                PackageManager packageManager = v.getContext().getPackageManager();
+                if (intent.resolveActivity(packageManager) != null) {
+                    v.getContext().startActivity(intent);
+                } else {
+                    Toast.makeText(v.getContext(), R.string.no_intent_error,Toast.LENGTH_LONG).show();
+                }
             }
         });
 
