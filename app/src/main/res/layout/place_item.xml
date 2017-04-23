@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"    >
+    android:paddingRight="15dp"
+    android:layout_marginBottom="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,16 +13,20 @@
 
         <ImageView
             android:id="@+id/placeImage"
-            android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:minHeight="120dp"
+
             android:scaleType="centerCrop"
             android:src="@drawable/arc_de_triomf" />
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="120dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="5dp">
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -29,6 +34,7 @@
 
                 <TextView
                     android:id="@+id/placeName"
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
@@ -49,11 +55,11 @@
                     android:gravity="right"
                     android:src="@drawable/ic_place_black_24dp" />
             </RelativeLayout>
+
             <TextView
                 android:id="@+id/placeShortDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="11sp"
                 tools:text="The Arc de Triomf was built as the gateway to the fair which was held in the Parc de la Ciutadella. The monument is classical in shape and proportions and features ground-breaking sculptural and decorative finishes replete with symbolism. It has become one of the city's iconic landmarks." />
             <TextView
                 android:id="@+id/address"
